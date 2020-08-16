@@ -179,6 +179,11 @@ def game():
         if not dino_jump and not dino_sit and screenlines[4][9] == '#': game_loop_flag = False
         if not dino_jump and not dino_sit and screenlines[3][9] == '#': game_loop_flag = False
 
+        if dino_sit and screenlines[4][9] == '<': game_loop_flag = False
+        if dino_jump and screenlines[0][9] == '<': game_loop_flag = False
+        if dino_jump and screenlines[0][9] == '<': game_loop_flag = False
+        if not dino_jump and not dino_sit and screenlines[4][9] == '<': game_loop_flag = False
+        if not dino_jump and not dino_sit and screenlines[3][9] == '<': game_loop_flag = False
         # Запоминание обьектов за дино
         for x in r:     
             screenlines[x] = screenlines[x][:8] + image_save[x] + screenlines[x][9:]
