@@ -1,5 +1,4 @@
 # console-dino
-The console version of google dinosaur in python!
 
 Консольный гугл динозаврик!
 
